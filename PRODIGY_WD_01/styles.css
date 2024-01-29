@@ -1,27 +1,65 @@
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333; /* Initial background color */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-    z-index: 1000;
-  }
-  
-  .menu-item {
-    color: #fff; /* Initial font color */
-    cursor: pointer;
-  }
-  
-  .content {
-    margin-top: 70px; /* Adjust margin to prevent content from being hidden behind the fixed navbar */
-    padding: 20px;
-  }
-  
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Initial background color */
+  z-index: 1000;
+  padding: 20px 0;
+  transition: background-color 0.5s;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bcd4; /* Hover color */
+}
+
+.section {
+  height: 100vh;
+  padding: 20px;
+}
+
+#home {
+  background-color: #f0f0f0; /* Background color for home section */
+}
+
+#about {
+  background-color: #d9edf7; /* Background color for about section */
+}
+
+#services {
+  background-color: #dff0d8; /* Background color for services section */
+}
+
+#contact {
+  background-color: #f2dede; /* Background color for contact section */
+}

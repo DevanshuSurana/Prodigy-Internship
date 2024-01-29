@@ -1,27 +1,23 @@
-// JavaScript to add interactivity
 document.addEventListener("DOMContentLoaded", function () {
-    const navbar = document.querySelector(".navbar");
-  
-    window.addEventListener("scroll", function () {
-      // Change background color on scroll
-      if (window.scrollY > 50) {
-        navbar.style.backgroundColor = "#007bff"; // New background color
-      } else {
-        navbar.style.backgroundColor = "#333"; // Default background color
-      }
-    });
-  
-    // Change style on hover for each menu item
-    const menuItems = document.querySelectorAll(".menu-item");
-  
-    menuItems.forEach(function (item) {
-      item.addEventListener("mouseenter", function () {
-        item.style.color = "#007bff"; // New font color on hover
-      });
-  
-      item.addEventListener("mouseleave", function () {
-        item.style.color = "#fff"; // Default font color after hover
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", function () {
+    // Change background color on scroll
+    if (window.scrollY > 50) {
+      header.style.backgroundColor = "#333"; // New background color on scroll
+    } else {
+      header.style.backgroundColor = "rgba(0, 0, 0, 0.7)"; // Initial background color
+    }
+  });
+
+  // Smooth scrolling for internal links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
       });
     });
   });
-  
+});
