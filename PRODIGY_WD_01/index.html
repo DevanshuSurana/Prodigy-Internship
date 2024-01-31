@@ -1,29 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Interactive Navigation Menu</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Landing Page Design</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<!-- fontawesome cdn -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Your Logo</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <div id="home" class="section"> <!-- Content for Home Section --> </div>
-  <div id="about" class="section"> <!-- Content for About Section --> </div>
-  <div id="services" class="section"> <!-- Content for Services Section --> </div>
-  <div id="contact" class="section"> <!-- Content for Contact Section --> </div>
+	<section class="hero">
+		<header>
+			<div class="container">
+				<div class="logo">
+					<h2>Web<span></span></h2>
+				</div>
 
-  <script src="script.js"></script>
+				<nav class="menu-overlay">
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Contact</a></li>
+						<li class="action"><a href="#">Learn More</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="details">
+			<div class="container">
+				<h1>Build Your <br>Business Website Easily</h1>
+				<p>It's very important to have a patient, and it will be followed by an adipiscing process, but I'll give it that way. It's very important to have a patient, and it will be followed by an adipiscing process, but I'll give it that way
+                    in time they occur as with great labor and pain.</p>
+
+				<a href="#">Create Now</a>
+			</div>
+		</div>
+
+		<div class="connect">
+			<div class="container">
+				<h3>Connect with us</h3>
+				<div class="links">
+				
+					<a href="https://github.com/DevanshuSurana">
+                        <i class="fa-brands fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/devanshu-surana-56b36713a/"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+			</div>			
+		</div>
+	</section>
+
+	<div class="hamb">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+	<!-- javascript code file added -->
+	<script type="text/javascript" src="./index.js"></script>
+
 </body>
 </html>
